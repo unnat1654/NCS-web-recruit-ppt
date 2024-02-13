@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Development Workshop | NCS</title>
+    <!-- reveal.js CSS Files -->
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+    <!-- Code syntax highlight CSS file -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+      table,
+      th,
+      td {
+        margin-right: 50px;
+        border: 1px solid black;
+        border-right: 1px solid white;
+        /* border-collapse: collapse; */
+      }
+    </style> 
+  </head>
+
+  <body>
+    <!-- Particle Js  -->
+    <div id="particles-js"></div>
+
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="js/particles.min.js"></script>
+
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-transition="zoom">
+          <section>
+            <img
+              style="margin-bottom: 0px"
+              height="170"
+              src="assets/ncsncs_logo.png"
+              alt=""
+            />
+            <h2 style="font-size: 90px !important">
+              Hello <span style="color: #ffdf3f">Everyone!</span>
+            </h2>
+            <h5>Welcome to the Live Stream</h5>
+            <h5>Nibble Computer Society</h5>
+            <br />
+
+            <small>
+              Press <code>Spacebar</code> for next slide. <br />
+              <code>Esc</code> or '<code>o</code>' for overview.
+            </small>
+          </section>
+          <section>
+            <h6 style="color:white !important">Our <u>objective</u> for today's live stream is to walk you through our <u>recruitment process</u>.</h6><br>
+            <h5><span style="color: #ffdf3f;">Link:</span> https://web-workshop-ncs.netlify.app/#/</h5>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Solving Some Common Doubts (FAQs)</h3>
+          </section>
+          <section>
+            <h4 style="color:#ffdf3f">Kitne padhe ki ncs me ho jaye - html, css se bas ho jayega?</h4>
+            <br>
+            <p style="font-size: 30px">Make sure to dedicate yourself to studying diligently to maximize your chances of being selected.Familiarize yourself with both front-end and back-end development, and consider specializing in one based on your interests and strengths."</p>
+            
+          </section>
+          <section>
+            <h4 style="color:#ffdf3f;font-size:larger">Are there any specific programming languages or technologies used in the web development club apart from html,css and js?</h4>
+            <br>
+            <p style="font-size: 30px">We work on a variety of tech stacks however at your level just HTML, CSS and JS is okay, but you could to learn “React” for helping in projects given by the society. So, why not learn it beforehand...</p>
+          </section>
+          <section>
+            <h4 style="color:#ffdf3f;font-size:larger">How many members get selected in the web club? <br>or<br>  How many members for frontend and backend each?</h4>
+            <br>
+            <p style="font-size: 30px">We work on a variety of tech stacks however at your level just HTML, CSS and JS is okay, but you could to learn “React” for helping in projects given by the society. So, why not learn it beforehand...</p>
+          </section>
+          <section>
+            <h4 style="color:#ffdf3f;font-size:larger">How many members get selected in the web club? <br>or<br>  How many members for frontend and backend each?</h4>
+            <br>
+            <p style="font-size: 30px">We work on a variety of tech stacks however at your level just HTML, CSS and JS is okay, but you could to learn “React” for helping in projects given by the society. So, why not learn it beforehand...</p>
+          </section>
+          <section>
+            <h4 style="color:#ffdf3f;font-size:larger">How one would be selected in the web club - like what would be the criteria or process?</h4>
+            <br>
+            <p style="font-size: 30px">Outperform the majority in the aptitude test. Perform well in task completion round.Showcase your communication skills in Group Discussion round and the final boss is the interview.</p>
+          </section>
+          <section>
+            <h4 style="color:#ffdf3f;font-size:larger">What projects are completed by the web club?
+              Our society website, codepad, and only available to ncs members webapps(can’t reveal) and many more.
+              </h4>
+            <br>
+            <p style="font-size: 30px"> The NCS website, codepad, websites for zealicon events and many other confidential webapps revealed only to society members and many more.</p>
+          </section>
+          <section>
+            <h3 style="color:#ffdf3f;">What does the web club do?</h3>
+            <br>
+            <p style="font-size: 30px">We hold workshops, internally as well as for everyone. We explore and cooperate with eachother on different kinds of projects. </p>
+          </section>
+          <section>
+            <h4 style="color:#ffdf3f;font-size:larger">Why Web club and not any other club?</h4>
+            <br>
+            <p style="font-size: 30px">Other clubs are not bad - go ahead and join them but if your interest peaks in websites or you are just starting in the tech field then web is the best possible option.</p>
+            <p style="font-size: 30px"> You could freely switch between clubs in the future and it's not like you would be stuck with web for four years, if you are in web club.</p>
+          </section>
+        </section>
+
+        <section>
+          <section data-transition="concave">
+            <h3>CSS</h3>
+          </section>
+          <section>
+            <h3>What is CSS?</h3>
+            <p style="font-size: 35px">
+              CSS is the language we use to style a Web page.
+            </p>
+          </section>
+          <section>
+            <h3>Need of CSS</h3>
+            <p style="font-size: 35px">
+              CSS beautifies web pages, controlling design, layout, and
+              responsiveness for different devices with styles like colors,
+              fonts, and positioning.
+            </p>
+          </section>
+          <section>
+            <h3>Types of CSS</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/typesofcss.webp"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>CSS Field</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Cssfields.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>CSS Example</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/cssexample.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>CSS Selector 1</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/selector 1.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>CSS Selector 2</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Selector2.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>CSS Selector 3</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Selector3.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>CSS Selector 4</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Selector4.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>Justify Content</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/justify-content.svg"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>Display</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/flex-direction.svg"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>Grid</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Grid.png"
+              alt=""
+            />
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>JavaScript</h3>
+            <img
+              style="background-color: white"
+              src="assets/complexity.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h4>What is JavaScript?</h4>
+          </section>
+          <section>
+            <p style="font-size: 35px">
+              JavaScript is programming language which is used to program the
+              behavior of web pages
+            </p>
+          </section>
+          <section>
+            <h3>JS Insert Code</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/js-Insert.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>JS Syntax</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Syntax.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>JS Example</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/JS Example.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>JS Retreiving Element</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Retrive.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>JS Crawling Dom</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/jsDOMCraw.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>JS Retreiving Selector</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Selector.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>JS Retreiving Selector</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Selector-js.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>Modifying Js</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/Node-js.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>Creating Js Tag</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/create-Tag.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>Style Through Js</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/js-style.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>Js Input data handle</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/js-input.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <h3>WebSite</h3>
+            <img
+              style="
+                height: 550px;
+                padding: 20px;
+                background-color: rgb(173, 224, 228);
+              "
+              src="assets/WEBSite Example.png"
+              alt=""
+            />
+          </section>
+        </section>
+
+        <section data-transition="zoom">
+          <h3>That's All Folks</h3>
+          <p>For Any Queries</p>
+          <a
+            href="http://www.facebook.com/nibblecomputersociety"
+            target="_blank"
+          >
+            <img src="assets/facebook.svg" width="64px" />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://www.github.com/ncs-jss" target="_blank">
+            <img src="assets/github-icon.svg" height="64px" />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://www.hackncs.com" target="_blank">
+            <img src="assets/ncsncs_logo.png" height="64px" />
+          </a>
+          <h3>Thank You</h3>
+          <p>Nibble Computer Society</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- reveal.js JS Files -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/particle.js"></script>
+    <script>
+      // Required, even if empty.
+      Reveal.initialize({
+        history: true,
+        transition: "convex",
+        dependencies: [
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            },
+          },
+        ],
+      });
+      Reveal.configure({
+        slideNumber: "h.v",
+      });
+    </script>
+
+    <!-- Script to save PDF. Put "print-pdf" in query string and press Ctrl+P to save. -->
+    <script>
+      if (window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = "css/print/pdf.css";
+        document.getElementsByTagName("head")[0].appendChild(link);
+      }
+    </script>
+  </body>
+</html>
